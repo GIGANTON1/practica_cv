@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informacion Personal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../curriculum.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+
+<div class="barra_navegacion" style="font-size: 25px; font-weight: bold">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" >
+        <a class="navbar-brand"  style="margin: auto; color: white" href="main_cv.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="trabajos.html" style="margin: auto">Servicios/Trabajos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand"  style="margin: auto; color: white;" id="contactar">Contáctame!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
+</head>
+<body>
+
+
+<div class="center" id="card">
+    <div class="bio_card">
+        <div class="left">
+            <div class="btn">
+                <i class="fas fa-plus"></i>
+            </div>
+            <img class="cover" src="../img/jordan-harrison-1208586-unsplash.jpg">
+            <div class="box">
+                <img class="profile" src="../img/perfil2.JPG">
+            </div>
+            <!--Contenido Card-->
+            <h1>Oliver Enriquez</h1>
+            <div class="info" >
+                <div class="col">
+                    <a href="https://www.instagram.com/orelenriquez19/">
+                    <i class="fab fa-instagram" style="color: white"></i>
+                    </a>
+                    <h4>Instagram</h4>
+                </div>
+                <div class="col" >
+                    <a href="https://www.facebook.com/oliver.enriquez.739">
+                        <i class="fab fa-facebook" style="color: white" ></i>
+                    </a>
+                    <h4>Facebook</h4>
+                </div>
+                <div class="col">
+                    <a  id="mostrar">
+                        <i class="fas fa-envelope" style="color: white;"></i>
+                    </a>
+                    <h4>Correo</h4>
+                </div>
+            </div>
+            <h5 style="color: #fafafa; font-weight: bold">May the Force be with You</h5>
+        </div>
+        <div class="right">
+            <!--Contenido Lado derecho-->
+            <div class="text">
+                <h2 style="font-weight: bold">Oliver Rafale Enriquez Lopez</h2>
+                <h3 style="font-weight: bold">Ingeniero en Ciencas de la Computacion en Proceso</h3>
+                <h3>Biografía</h3>
+                <h6>Nombre: Oliver Rafale Enriquez Lopez</h6>
+                <h6>Fecha de Nacimiento: 2 de Abril 1997</h6>
+                <h6>Sexo: Masculino</h6>
+                <h7>Estudios <br>
+                    Primaria:LCBS <br>
+                    Secundaria: Instituto Maria Regina <br>
+                    Universidad: UNICAH <br>
+                    Novia: Anny Yaritzi Rivas Mendoza <br>
+                </h7>
+                <p></p>
+                <h3>Ubicación</h3>
+                <p>La Ceiba, Atlántida, Honduras</p>
+                <a href="../main/trabajos.html">
+                    <button><i class="far fa-envelope"></i>Ver más</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-----------Final del Card Principal------------>
+
+</form>
+<!---Formulario de mensaje-->
+<h1 style="font-weight: bold; color: white; display: none; text-align: center; margin-top: 30px" id="text_form">Envio de Correo</h1>
+<form style="width: 55%; margin: auto; margin-top: 150px;  display: none" id="contenedor_formulario" method="post" action="https://formspree.io/orelenriquez19@gmail.com">
+    <div class="d-flex flex-row bd-highlight mb-3" >
+    <div class="p-2" id="formulario" >
+        <label for="nombre_correo" style="font-weight: bold; font-size: 18px; color: white; padding: 0px;">Nombre Completo</label>
+        <input name="nombre" type="text" class="form-control" id="nombre_correo" required aria-describedby="emailHelp" placeholder="Ingresa tu Nombre" style="width: 100%; margin-right: 220px;">
+    </div>
+    <div class="p-2">
+        <label for="asunto" style="font-weight: bold; font-size: 18px; color: white">Asunto</label>
+        <input name="asunto" type="text" class="form-control" id="asunto" required placeholder="Escribe el tema" style="width: 220%;">
+    </div>
+    </div>
+    <div class="form-group">
+        <label for="contenido_msj" style="font-weight: bold; font-size: 18px; color: white">Tema</label>
+        <input name="comentario"  type="text" class="form-control" id="contenido_msj" required placeholder="Escribe el Contenido del Mensaje">
+    </div>
+    <button type="submit" class="btn btn-primary" style="font-weight: bold; font-size: 18px;" id="enviar">Enviar</button>
+</form>
+<!--Mensaje de Correo Enviado-->
+<div class="alert alert-dark" role="alert" id="mensaje" style="display: none; width: 50%; margin: auto; margin-top: 150px; text-align: center">
+    <h3 class="alert-heading" style="font-weight: bold; color: black">Listo! Estaremos en Contacto muy Pronto!</h3>
+    <hr>
+    <p class="mb-0" style="font-weight: bold; color: black">Agradezco por confiar y contactarme! Te apoyare en lo que puedas.</p>
+    <button class="btn btn-primary" style="font-weight: bold; font-size: 18px;" id="esconder">LISTO</button>
+</div>
+<script type="text/javascript">
+    $('#mostrar').click(function () {
+        $('#contenedor_formulario').show()
+        $('#card').hide()
+        $('#text_form ').show()
+    })
+    $('#enviar').click(function () {
+        $('#mensaje').show()
+        $('#contenedor_formulario').hide()
+    })
+    $('#esconder').click(function () {
+        $('#mensaje').hide()
+        $('#card').show()
+    })
+    $('#contactar').click(function () {
+        $('#contenedor_formulario').show()
+        $('#card').hide()
+        $('#text_form').show()
+    })
+</script>
+
+<script>
+
+    $(document).ready(function(){
+        $(".btn").on("click",function(){
+            if($(".right").css("width") == "0px"){
+                $(".right").animate({  width: "500px" },400);
+                $(".btn i").removeClass();
+                $(".btn i").addClass("fas fa-minus");
+            }else{
+                $(".right").animate({  width: "0px" },400);
+                $(".btn i").removeClass();
+                $(".btn i").addClass("fas fa-plus");
+            }
+        });
+    });
+
+</script>
+</body>
+</html>

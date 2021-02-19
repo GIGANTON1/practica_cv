@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("img/freestocks-org-683816-unsplash(1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.barra_navegacion .navbar a:hover{
+
+}

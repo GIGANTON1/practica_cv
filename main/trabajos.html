@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios y Trabajos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+
+    <div class="barra_navegacion" style="font-size: 25px; font-weight: bold; font-family: 'Montserrat', sans-serif;">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" >
+            <a class="navbar-brand"  style="margin: auto; color: white" href="main_cv.html">Pagina Principal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="trabajos.html" style="margin: auto">Servicios/Trabajos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand"  style="margin: auto; color: white;" id="contactar">Contáctame!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+</head>
+
+<body>
+<div id="card1" class="card text-center" style="width: 55%; margin: auto; margin-top: 10px; background-image: url('../img/denny-bu-1325486-unsplash.jpg'); background-size: cover; border-radius: 15px;">
+    <div class="card-header" style="font-weight: bold; color: white; border-color: black; font-size: 35px;     font-family: 'Montserrat', sans-serif;">
+        Trabajos Realizados
+    </div>
+    <div class="card-body" style="font-weight: bold; color: white">
+        <h4 class="card-title" style="font-weight: bold">Trabajos realizados con Profesionalismo</h4>
+        <p class="card-text" style="font-size: 25px">Implementaciones, configuraciones y capacitaciones a Grandes diferentes Empresas</p>
+        <a id="btn_trabajo" class="btn btn-primary" style="font-weight: bold">Ver más</a>
+    </div>
+    <div class="card-footer text-muted">
+        <p style="color: white; font-weight: bold">Oliver Rafale Enriquez Lopez</p>
+    </div>
+</div>
+<div  id="card2" class="card text-center" style="width: 55%; margin: auto; margin-top: 50px; background-image: url('../img/denny-bu-1325486-unsplash.jpg'); background-size: cover; border-radius: 15px;    font-family: 'Montserrat', sans-serif;">
+    <div class="card-header" style="font-weight: bold; color: white; font-size: 35px">
+        Habilidades
+    </div>
+    <div class="card-body" style="font-weight: bold; color: white">
+        <h4 class="card-title" style="font-weight: bold">Diferentes Habilidade en diferentes Ramas</h4>
+        <p class="card-text" style="font-size: 25px">Area de las Redes, implementacion, atencion al cliente etc</p>
+        <a id="btnhabilidades" class="btn btn-primary" style="font-weight: bold">Ver más</a>
+    </div>
+    <div class="card-footer text-muted">
+        <p style="color: white; font-weight: bold">Oliver Rafale Enriquez Lopez</p>
+    </div>
+</div>
+<h1 style="font-weight: bold; color: white; display: none; text-align: center; margin-top: 30px" id="text_form">Envio de Correo</h1>
+<form style="width: 55%; margin: auto; margin-top: 150px;  display: none" id="contenedor_formulario" method="post" action="https://formspree.io/orelenriquez19@gmail.com">
+    <div class="d-flex flex-row bd-highlight mb-3" >
+        <div class="p-2" id="formulario" >
+            <label for="nombre_correo" style="font-weight: bold; font-size: 18px; color: white; padding: 0px;">Nombre Completo</label>
+            <input name="nombre" type="text" class="form-control" id="nombre_correo" required aria-describedby="emailHelp" placeholder="Ingresa tu Nombre" style="width: 100%; margin-right: 220px;">
+        </div>
+        <div class="p-2">
+            <label for="asunto" style="font-weight: bold; font-size: 18px; color: white">Asunto</label>
+            <input name="asunto" type="text" class="form-control" id="asunto" required placeholder="Escribe el tema" style="width: 220%;">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="contenido_msj" style="font-weight: bold; font-size: 18px; color: white">Tema</label>
+        <input name="comentario"  type="text" class="form-control" id="contenido_msj" required placeholder="Escribe el Contenido del Mensaje">
+    </div>
+    <button type="submit" class="btn btn-primary" style="font-weight: bold; font-size: 18px;" id="enviar">Enviar</button>
+</form>
+<!--Carrusel el trabajo-->
+<h1 style="font-weight: bold; color: white; display: none; text-align: center; margin-top: 30px" id="texto">Trabajos y Experiencias</h1>
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="width: 50%; margin: auto; margin-top: 50px; height: 50%; display: none">
+    <div class="carousel-inner" >
+        <div class="carousel-item active" data-interval="10000">
+            <img src="../img/WhatsApp%20Image%202019-04-11%20at%203.12.55%20PM.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+            <img src="../img/WhatsApp%20Image%202019-04-11%20at%203.11.07%20PM.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+            <img src="../img/WhatsApp%20Image%202019-04-11%20at%202.48.23%20PM.jpeg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+<h1 style="font-weight: bold; color: white; display: none; text-align: center; margin-top: 30px" id="texto2">Habilidades y Conocimientos</h1>
+<div id="carouselExampleInterval2" class="carousel slide" data-ride="carousel" style="width: 50%; margin: auto; margin-top: 50px; height: 50%; display: none">
+    <div class="carousel-inner" >
+        <div class="carousel-item active" data-interval="3000">
+            <img src="../img/jordan-harrison-1208586-unsplash.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+            <img src="../img/pawel-czerwinski-693739-unsplash.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+    <!--Fin Carrusel el trabajo-->
+<script>
+    $('#contactar').click(function () {
+        $('#card1').hide()
+        $('#card2').hide()
+        $('#contenedor_formulario').show()
+        $('#carouselExampleInterval2').hide()
+        $('#text_form').show()
+        $('#texto2').hide()
+        $('#texto').hide()
+    })
+    $('#btn_trabajo').click(function () {
+        $('#card1').hide()
+        $('#card2').hide()
+        $('#carouselExampleInterval').show()
+        $('#texto').show()
+    })
+    $('#btnhabilidades').click(function () {
+        $('#card1').hide()
+        $('#card2').hide()
+        $('#carouselExampleInterval2').show()
+        $('#texto2').show()
+    })
+</script>
+</body>
+</html>
